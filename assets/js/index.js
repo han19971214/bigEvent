@@ -39,18 +39,18 @@ $(function() {
 
         })
 
-        getUserInfo()
 
-        $('#logout').click(function() {
 
-            localStorage.removeItem('token')
 
-            localStorage.href = './login.html'
-        })
     }
 
+    getUserInfo()
+    $('#logout').click(function() {
+        console.log(1);
+        localStorage.removeItem('token')
 
-
+        location.href = './login.html'
+    })
 
 
 
